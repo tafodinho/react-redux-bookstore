@@ -1,24 +1,7 @@
 const CREATE_BOOK = 'CREATE_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
-const initialState = [
-  {
-    id: Math.random(),
-    title: 'Hello World',
-    category: 'Poetry',
-  },
-  {
-    id: Math.random(),
-    title: 'Farmers Place',
-    category: 'Agriculture',
-  },
-  {
-    id: Math.random(),
-    title: 'The first americas',
-    category: 'History',
-  },
-];
-const booksReducer = (state = initialState, action) => {
+const booksReducer = (state = [], action) => {
   const tempBook = [...state];
   switch (action.type) {
     case CREATE_BOOK:
