@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable arrow-body-style */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
@@ -20,20 +19,16 @@ const BookList = (props) => {
           <th>Category</th>
         </tr>
         {
-          books.map((book, key) => {
-            return <Book book={book} key={key} />;
-          })
+          books.map((book, key) => <Book book={book} key={key} />)
         }
       </table>
     </div>
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    books: state.books,
-  };
-};
+const mapStateToProps = (state) => ({
+  books: state.books,
+});
 BookList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
 };

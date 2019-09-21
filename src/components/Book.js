@@ -1,8 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
-
 import React from 'react';
 import PropTypes from 'prop-types';
-
 
 const Book = (props) => {
   const { id, title, category } = props.book;
