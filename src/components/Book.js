@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const Book = (props) => {
   const { id, title, category } = props.book;
+  console.log(props.book)
   return (
     <tr>
       <td>{id}</td>

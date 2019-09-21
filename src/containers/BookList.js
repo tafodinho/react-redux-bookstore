@@ -12,14 +12,18 @@ const BookList = (props) => {
   return (
     <div>
       <table>
-        <tr>
-          <th>BookID</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
-        {
-          books.map((book, key) => <Book book={book} key={key} />)
-        }
+        <thead>
+          <tr>
+            <th>BookID</th>
+            <th>Title</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            books.map((book, key) => <Book book={book} key={key} />)
+          }
+        </tbody>
       </table>
     </div>
   );

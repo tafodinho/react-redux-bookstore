@@ -9,23 +9,25 @@ import App from './components/App';
 import reducer from './reducers';
 import './index.css';
 
-const initialState = [
-  {
-    id: Math.random(),
-    title: 'Hello World',
-    category: 'Poetry',
-  },
-  {
-    id: Math.random(),
-    title: 'Farmers Place',
-    category: 'Agriculture',
-  },
-  {
-    id: Math.random(),
-    title: 'The first americas',
-    category: 'History',
-  },
-];
+const initialState = {
+  books: [
+    {
+      id: Math.random(),
+      title: 'Hello World',
+      category: 'Poetry',
+    },
+    {
+      id: Math.random(),
+      title: 'Farmers Place',
+      category: 'Agriculture',
+    },
+    {
+      id: Math.random(),
+      title: 'The first americas',
+      category: 'History',
+    },
+  ]
+}
 
 const store = createStore(reducer, initialState, applyMiddleware(thunk));
 
