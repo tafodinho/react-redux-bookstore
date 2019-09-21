@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/no-array-index-key */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
