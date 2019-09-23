@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = (props) => {
-  const { id, title, category } = props.book;
+  const { book: { id, title, category } } = props;
 
   return (
     <tr>
