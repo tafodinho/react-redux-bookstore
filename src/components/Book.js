@@ -11,7 +11,7 @@ const Book = (props) => {
       <td>{title}</td>
       <td>{category}</td>
       <td>
-        <button type="submit" onClick={handleSubmitBook(id)}>Remove</button>
+        <button type="submit" onClick={() => handleSubmitBook(id)}>Remove</button>
       </td>
     </tr>
   );
