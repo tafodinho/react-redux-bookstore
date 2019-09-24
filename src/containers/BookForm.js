@@ -12,7 +12,7 @@ class BookForm extends React.Component {
 
   render() {
     const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-    const options = categories.map((category) => (
+    const options = categories.map(category => (
       <option value={category} key={category}>{category}</option>
     ));
     return (

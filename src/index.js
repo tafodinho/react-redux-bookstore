@@ -26,8 +26,8 @@ const initialState = {
       title: 'The first americas',
       category: 'History',
     },
-  ]
-}
+  ],
+};
 
 const store = createStore(reducer, initialState, applyMiddleware(thunk));
 
