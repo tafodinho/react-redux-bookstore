@@ -1,5 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -10,7 +8,7 @@ class BookForm extends React.Component {
     super(props);
     this.state = {
       title: '',
-      category: '',
+      category: 'Action',
     };
   }
 
@@ -32,7 +30,7 @@ class BookForm extends React.Component {
     submitBook(this.state);
     this.setState({
       title: '',
-      category: '',
+      category: 'Action',
     });
   }
 
