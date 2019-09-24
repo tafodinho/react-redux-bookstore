@@ -7,7 +7,6 @@ const booksReducer = (state = [], action) => {
       return [...state, action.book];
     }
     case REMOVE_BOOK: {
-      console.log(action.book, state)
       const newState = state.filter(book => action.book !== book.id);
       return newState;
     }
