@@ -39,7 +39,7 @@ class BookForm extends React.Component {
   render() {
     const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
     const { title } = this.state;
-    const options = categories.map(category => (
+    const options = categories.map((category) => (
       <option value={category} key={category}>{category}</option>
     ));
     return (
@@ -55,16 +55,17 @@ class BookForm extends React.Component {
               { options }
             </select>
           </label>
+          <button type="submit">Add Book</button>
         </form>
       </div>
     );
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   books: state,
 });
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   submitBook: (book) => dispatch(createBook(book)),
 });
 BookForm.propTypes = {

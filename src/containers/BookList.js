@@ -8,8 +8,7 @@ import { removeBook } from '../actions';
 
 const BookList = (props) => {
   const { books } = props;
-
-  const handleRemoveBook = book => {
+  const handleRemoveBook = (book) => {
     const { submitRemoveBook } = props;
     submitRemoveBook(book);
   };
@@ -26,7 +25,7 @@ const BookList = (props) => {
         </thead>
         <tbody>
           {
-            books.map(book => (
+            books.map((book) => (
               <Book book={book} key={book.id} handleRemoveBook={handleRemoveBook} />
             ))
           }
@@ -36,11 +35,11 @@ const BookList = (props) => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   books: state.books,
 });
-const mapDispatchToProps = dispatch => ({
-  submitRemoveBook: book => dispatch(removeBook(book)),
+const mapDispatchToProps = (dispatch) => ({
+  submitRemoveBook: (book) => dispatch(removeBook(book)),
 });
 BookList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
