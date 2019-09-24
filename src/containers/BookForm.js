@@ -34,7 +34,7 @@ class BookForm extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   books: state,
 });
 export default connect(mapStateToProps, null)(BookForm);
