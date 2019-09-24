@@ -8,6 +8,7 @@
         "SharedArrayBuffer": "readonly"
     },
     "extends": [
+        "airbnb",
         "plugin:react/recommended"
     ],
     "parserOptions": {

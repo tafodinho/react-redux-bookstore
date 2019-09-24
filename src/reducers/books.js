@@ -2,13 +2,14 @@ const CREATE_BOOK = 'CREATE_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
 const booksReducer = (state = [], action) => {
-  const tempBook = [...state];
   switch (action.type) {
-    case CREATE_BOOK:
+    case CREATE_BOOK: {
       return [...state, action.book];
-    case REMOVE_BOOK:
-      tempBook.splice(action.book, 1);
-      return tempBook;
+    }
+    case REMOVE_BOOK: {
+      const newState = state.filter(book => action.id !== book.id);
+      return newState;
+    }
     default:
       return state;
   }
