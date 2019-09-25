@@ -27,6 +27,7 @@ const initialState = {
       category: 'History',
     },
   ],
+  filter: '',
 };
 
 const store = createStore(reducer, initialState, applyMiddleware(thunk));
