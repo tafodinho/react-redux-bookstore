@@ -6,16 +6,10 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook, filterCategory } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
+import filterBooks from '../helper';
 
 const BookList = (props) => {
-  const { books, filter } = props;
-  const filteredBooks = books.filter((book) => {
-    if (filter !== '') {
-      return book.category === filter;
-    }
-    return book;
-  });
-
+  const { books } = props;
   const categories = ['ALL', 'Action', 'Biography', 'History', 'Agriculture', 'Kids', 'Poetry', 'Sci-Fi'];
 
   const handleRemoveBook = (book) => {
@@ -45,7 +39,7 @@ const BookList = (props) => {
         </thead>
         <tbody>
           {
-            filteredBooks.map((book) => (
+            books.map((book) => (
               <Book book={book} key={book.id} handleRemoveBook={handleRemoveBook} />
             ))
           }
@@ -56,8 +50,7 @@ const BookList = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  books: state.books,
-  filter: state.filter,
+  books: filterBooks(state.books, state.filter),
 });
 const mapDispatchToProps = (dispatch) => ({
   submitRemoveBook: (book) => dispatch(removeBook(book)),
@@ -65,7 +58,6 @@ const mapDispatchToProps = (dispatch) => ({
 });
 BookList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
-  filter: PropTypes.string.isRequired,
   submitFilterCategory: PropTypes.func.isRequired,
   submitRemoveBook: PropTypes.func.isRequired,
 };

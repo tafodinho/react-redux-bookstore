@@ -1,11 +1,8 @@
 const CATEGORY_FILTER = 'CATEGORY_FILTER';
 
-const filterReducer = (state = '', action) => {
+const filterReducer = (state = 'ALL', action) => {
   switch (action.type) {
     case CATEGORY_FILTER: {
-      if (action.category === 'ALL') {
-        return '';
-      }
       return action.category;
     }
     default:
