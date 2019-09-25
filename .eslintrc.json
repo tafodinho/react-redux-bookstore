@@ -8,7 +8,7 @@
         "SharedArrayBuffer": "readonly"
     },
     "extends": [
-        "plugin:react/recommended"
+        "airbnb"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -21,9 +21,11 @@
         "react"
     ],
     "rules": {
+        "arrow-parens": ["error", "always"],
         "react/jsx-filename-extension": 0,
         "no-shadow": 0,
         "import/no-extraneous-dependencies": 0,
-        "camelcase": 0
+        "camelcase": 0,
+        "import/no-unresolved": 0
     }
 }
