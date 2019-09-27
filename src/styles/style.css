@@ -41,12 +41,12 @@ body {
     float: right;
     position: relative;
     color: #4386bf; }
-    .header .oval i {
-      height: 40px;
+    .header .oval .user-icon {
+      height: 25px;
       width: 40px;
       position: absolute;
-      left: 33%;
-      top: 28%; }
+      left: 5%;
+      top: 22%; }
 
 .main-section div p {
   margin-top: 12px; }
@@ -123,6 +123,8 @@ body {
       display: inline;
       float: left;
       margin-left: 20px; }
+      .main-section div table tbody tr .middle ul .percentage-box p {
+        margin-top: 0px; }
       .main-section div table tbody tr .middle ul .percentage-box .percentage {
         font-size: 32px;
         color: #121212; }

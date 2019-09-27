@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => (
   <div className="header">
@@ -9,7 +11,7 @@ const Header = () => (
         <li className="header-text active">CATEGORIES</li>
         <li className="user-profile clearfix">
           <div className="oval">
-            <i className="fas fa-user-alt" />
+            <FontAwesomeIcon icon={faUserAlt} className="user-icon" />
           </div>
         </li>
       </ul>

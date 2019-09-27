@@ -52,12 +52,12 @@ body {
     position: relative;
     color: #4386bf;
 
-    i {
-      height: 40px;
+    .user-icon {
+      height: 25px;
       width: 40px;
       position: absolute;
-      left: 33%;
-      top: 28%;
+      left: 5%;
+      top: 22%;
     }
   }
 }
@@ -159,6 +159,9 @@ body {
                 display: inline;
                 float: left;
                 margin-left: 20px;
+                p {
+                  margin-top: 0px;
+                }
                 .percentage {
                   font-size: 32px;
                   color: #121212;

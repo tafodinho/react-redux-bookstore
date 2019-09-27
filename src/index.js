@@ -9,7 +9,6 @@ import App from './components/App';
 import reducer from './reducers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/style.css';
-import './assets/font/css/all.css';
 
 
 const initialState = {

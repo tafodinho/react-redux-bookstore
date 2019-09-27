@@ -17,6 +17,6 @@ const CategoryFilter = (props) => {
 CategoryFilter.propTypes = {
   categories: PropTypes.instanceOf(Array).isRequired,
   handleFilterChange: PropTypes.func.isRequired,
-  className: PropTypes.isRequired,
+  className: PropTypes.string.isRequired,
 };
 export default CategoryFilter;
