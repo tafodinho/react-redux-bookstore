@@ -4,17 +4,31 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import { removeBook } from '../actions';
+import { removeBook, filterCategory } from '../actions';
+import CategoryFilter from '../components/CategoryFilter';
+import filterBooks from '../helper';
 
 const BookList = (props) => {
   const { books } = props;
+  const categories = ['ALL', 'Action', 'Biography', 'History', 'Agriculture', 'Kids', 'Poetry', 'Sci-Fi'];
+
   const handleRemoveBook = (book) => {
     const { submitRemoveBook } = props;
     submitRemoveBook(book);
   };
 
+  const handleFilterChange = (e) => {
+    const category = e.target.value;
+    const { submitFilterCategory } = props;
+    submitFilterCategory(category);
+  };
+
   return (
     <div>
+      <p>
+        View:
+        <CategoryFilter categories={categories} handleFilterChange={handleFilterChange} />
+      </p>
       <table>
         <thead>
           <tr>
@@ -36,15 +50,15 @@ const BookList = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  books: state.books,
+  books: filterBooks(state.books, state.filter),
 });
 const mapDispatchToProps = (dispatch) => ({
   submitRemoveBook: (book) => dispatch(removeBook(book)),
+  submitFilterCategory: (category) => dispatch(filterCategory(category)),
 });
 BookList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
-};
-BookList.propTypes = {
+  submitFilterCategory: PropTypes.func.isRequired,
   submitRemoveBook: PropTypes.func.isRequired,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);

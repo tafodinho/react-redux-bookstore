@@ -1,5 +1,6 @@
 const CREATE_BOOK = 'CREATE_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
+const CATEGORY_FILTER = 'CATEGORY_FILTER';
 
 const createBook = (book) => {
   const newBook = book;
@@ -15,4 +16,9 @@ const removeBook = (book) => ({
   book,
 });
 
-export { createBook, removeBook };
+const filterCategory = (category) => ({
+  type: CATEGORY_FILTER,
+  category,
+});
+
+export { createBook, removeBook, filterCategory };
