@@ -6,12 +6,43 @@ const Book = (props) => {
   const { book: { id, title, category }, handleRemoveBook } = props;
 
   return (
-    <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
-      <td>
-        <button type="submit" onClick={() => handleRemoveBook(id)}>Remove</button>
+    <tr className="row content-row">
+      <td className="col-sm-5 left">
+        <p className="category-text">{category}</p>
+        <p className="title-text">{title}</p>
+        <p className="author-name">Jude Collins</p>
+        <ul>
+          <li>Comment</li>
+          <li> | </li>
+          <li>
+            <div
+              onClick={() => handleRemoveBook(id)}
+              onKeyPress={() => {}}
+              role="button"
+              tabIndex={0}
+            >
+              Remove
+            </div>
+          </li>
+        </ul>
+      </td>
+      <td className="col-sm-4 middle">
+        <ul className="clearFix">
+          <li className="loader-box">
+            <div className="loader" />
+          </li>
+          <li className="percentage-box">
+            <p className="percentage">100%</p>
+            <p className="completed">Completed</p>
+          </li>
+        </ul>
+      </td>
+      <td className="col-sm-3 right">
+        <div>
+          <p className="chapter">CURRENT CHAPTER</p>
+          <p className="current-chapter">Chapter 17</p>
+          <button type="submit" className="btn">UPDATE PROGRESS</button>
+        </div>
       </td>
     </tr>
   );

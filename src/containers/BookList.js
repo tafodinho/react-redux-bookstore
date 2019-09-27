@@ -25,18 +25,11 @@ const BookList = (props) => {
 
   return (
     <div>
-      <p>
-        View:
-        <CategoryFilter categories={categories} handleFilterChange={handleFilterChange} />
+      <p className="row">
+        <span className="col-sm-2">Filter by</span>
+        <CategoryFilter categories={categories} handleFilterChange={handleFilterChange} className="col-sm-6" />
       </p>
       <table>
-        <thead>
-          <tr>
-            <th>BookID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
         <tbody>
           {
             books.map((book) => (

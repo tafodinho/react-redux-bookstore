@@ -41,19 +41,25 @@ class BookForm extends React.Component {
       <option value={category} key={category}>{category}</option>
     ));
     return (
-      <div>
+      <div className="row form-container">
+        <hr />
+        <br />
+        <p>ADD NEW BOOK</p>
         <form onSubmit={(e) => this.handleSubmit(e)}>
-          <label htmlFor="title">
-            Title:
-            <input value={title} onChange={(e) => this.handleChange(e)} name="title" />
+          <label htmlFor="title" className="col-sm-6">
+            <input
+              value={title}
+              onChange={(e) => this.handleChange(e)}
+              name="title"
+              placeholder="Book Title"
+            />
           </label>
-          <label htmlFor="category">
-            Category:
+          <label htmlFor="category" className="col-sm-4">
             <select name="category" onChange={(e) => this.handleChange(e)}>
               { options }
             </select>
           </label>
-          <button type="submit">Add Book</button>
+          <button type="submit" className="btn col-sm-2">Add Book</button>
         </form>
       </div>
     );
