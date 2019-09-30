@@ -1,0 +1,187 @@
+body {
+  background-color: #fafafa !important; }
+
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #ffffff; }
+  .header .inner-header {
+    padding: 0; }
+    .header .inner-header ul {
+      padding-left: 0;
+      padding-top: 14px; }
+  .header ul li {
+    display: inline; }
+  .header .logo {
+    width: 240px;
+    height: 37px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0290ff;
+    margin-right: 75px; }
+  .header .header-text {
+    width: 59px;
+    height: 16px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    color: #121212;
+    margin-right: 20px; }
+  .header .active {
+    opacity: 0.5; }
+  .header .oval {
+    width: 45px;
+    height: 45px;
+    border: solid 1px #e8e8e8;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    color: #4386bf; }
+    .header .oval .user-icon {
+      height: 25px;
+      width: 40px;
+      position: absolute;
+      left: 5%;
+      top: 22%; }
+
+.main-section div p {
+  margin-top: 12px; }
+  .main-section div p select {
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #ffffff; }
+  .main-section div p span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #888888;
+    padding-top: 9px;
+    margin-right: -93px; }
+.main-section div table {
+  width: 100%; }
+  .main-section div table tbody .content-row {
+    padding: 20px 12px;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #ffffff;
+    margin-bottom: 12px; }
+  .main-section div table tbody tr p {
+    margin-bottom: 5px; }
+  .main-section div table tbody tr .left .category-text {
+    width: 49px;
+    height: 18px;
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: bold;
+    color: #121212; }
+  .main-section div table tbody tr .left .title-text {
+    width: 197px;
+    height: 29px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    color: #121212; }
+  .main-section div table tbody tr .left .author-name {
+    width: 107px;
+    height: 19px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4386bf; }
+  .main-section div table tbody tr .left ul {
+    padding-left: 0; }
+    .main-section div table tbody tr .left ul li {
+      display: inline;
+      font-size: 14px;
+      font-weight: 300;
+      color: #4386bf;
+      padding-right: 12px; }
+      .main-section div table tbody tr .left ul li div {
+        display: inline;
+        cursor: pointer; }
+  .main-section div table tbody tr .middle ul {
+    margin-top: 24px; }
+    .main-section div table tbody tr .middle ul p {
+      margin-bottom: -5px; }
+    .main-section div table tbody tr .middle ul .loader-box {
+      display: inline;
+      float: left; }
+      .main-section div table tbody tr .middle ul .loader-box .loader {
+        width: 68px;
+        height: 68px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #307bbe;
+        border-radius: 50%; }
+    .main-section div table tbody tr .middle ul .percentage-box {
+      display: inline;
+      float: left;
+      margin-left: 20px; }
+      .main-section div table tbody tr .middle ul .percentage-box p {
+        margin-top: 0px; }
+      .main-section div table tbody tr .middle ul .percentage-box .percentage {
+        font-size: 32px;
+        color: #121212; }
+      .main-section div table tbody tr .middle ul .percentage-box .completed {
+        margin-left: 10;
+        opacity: 0.5;
+        font-size: 14px;
+        color: #121212; }
+  .main-section div table tbody tr .right div .chapter {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 300;
+    color: #121212; }
+  .main-section div table tbody tr .right div .current-chapter {
+    font-size: 16px;
+    font-weight: 300;
+    color: #121212; }
+  .main-section div table tbody tr .right div button {
+    width: 184px;
+    border-radius: 3px;
+    background-color: #0290ff;
+    color: white;
+    margin-top: 16px; }
+
+.form-container hr {
+  width: 100%; }
+.form-container p {
+  width: 174px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #888888;
+  margin-left: 3px;
+  margin-bottom: 30px; }
+.form-container form {
+  width: 100%; }
+  .form-container form label {
+    padding-left: 0; }
+    .form-container form label input {
+      width: 100%;
+      height: 45px;
+      border-radius: 4px;
+      border: solid 1px #e8e8e8;
+      background-color: #ffffff;
+      padding: 2px 15px; }
+    .form-container form label select {
+      width: 100%;
+      height: 45px;
+      border-radius: 4px;
+      border: solid 1px #e8e8e8;
+      background-color: #ffffff;
+      padding: 2px 15px; }
+  .form-container form button {
+    width: 184px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #0290ff;
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */
