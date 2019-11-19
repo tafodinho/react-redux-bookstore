@@ -1,6 +1,6 @@
 # Bookstore
 
-Bookstore CMS is an app that contains books. Users can add or remove books from the list. Each book contain information such as: Title, Category that the books belongs to, Percentage of completition, Chapter that the user is reading now
+Bookstore CMS is an app that contains books. Users can add or remove books from the list. Each book contain information such as: Title, Category that the books belongs to, Percentage of completion, Chapter that the user is reading now
 
 Online preview: https://josh-react-bookstore.herokuapp.com/
 
