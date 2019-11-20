@@ -6,8 +6,8 @@ const Header = () => (
   <div className="header">
     <div className="container inner-header">
       <ul>
-        <li className="logo">Bookstore CMS</li>
-        <li className="header-text">BOOKS</li>
+        <li className="logo">Movie CMS</li>
+        <li className="header-text">VIDEOS</li>
         <li className="header-text active">CATEGORIES</li>
         <li className="user-profile clearfix">
           <div className="oval">

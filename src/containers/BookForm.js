@@ -44,14 +44,14 @@ class BookForm extends React.Component {
       <div className="row form-container">
         <hr />
         <br />
-        <p>ADD NEW BOOK</p>
+        <p>ADD NEW MOVIE</p>
         <form onSubmit={(e) => this.handleSubmit(e)}>
           <label htmlFor="title" className="col-sm-6">
             <input
               value={title}
               onChange={(e) => this.handleChange(e)}
               name="title"
-              placeholder="Book Title"
+              placeholder="Movie Title"
             />
           </label>
           <label htmlFor="category" className="col-sm-4">
@@ -59,7 +59,7 @@ class BookForm extends React.Component {
               { options }
             </select>
           </label>
-          <button type="submit" className="btn col-sm-2">Add Book</button>
+          <button type="submit" className="btn col-sm-2">Add Movie</button>
         </form>
       </div>
     );
