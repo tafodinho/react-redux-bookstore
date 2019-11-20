@@ -1,3 +1,6 @@
+$primariy-color: #d93025;
+$secondery-color: #4386bf; 
+
 body {
   background-color: #fafafa !important;
 }
@@ -23,7 +26,7 @@ body {
     height: 37px;
     font-size: 30px;
     font-weight: bold;
-    color: #0290ff;
+    color: $primariy-color;
     margin-right: 75px;
   }
   
@@ -119,7 +122,7 @@ body {
               height: 19px;
               font-size: 14px;
               font-weight: 300;
-              color: #4386bf;
+              color: $primariy-color;
             }
             ul {
               padding-left: 0;
@@ -127,7 +130,7 @@ body {
                 display: inline;
                 font-size: 14px;
                 font-weight: 300;
-                color: #4386bf;
+                color: $primariy-color;
                 padding-right: 12px;
                 div {
                   display: inline;
@@ -151,7 +154,7 @@ body {
                   height: 68px;
                   border-style: solid;
                   border-width: 5px;
-                  border-color: #307bbe;
+                  border-color: $primariy-color;
                   border-radius: 50%;
                 }
               }
@@ -191,7 +194,7 @@ body {
               button {
                 width: 184px;
                 border-radius: 3px;
-                background-color: #0290ff;
+                background-color: $primariy-color;
                 color: white;
                 margin-top: 16px;
               }
@@ -242,7 +245,7 @@ body {
         width: 184px;
         height: 45px;
         border-radius: 3px;
-        background-color: #0290ff;
+        background-color: $primariy-color;
         color: white;
       }
   }

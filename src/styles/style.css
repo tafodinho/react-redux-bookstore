@@ -17,7 +17,7 @@ body {
     height: 37px;
     font-size: 30px;
     font-weight: bold;
-    color: #0290ff;
+    color: #d93025;
     margin-right: 75px; }
   .header .header-text {
     width: 59px;
@@ -93,14 +93,14 @@ body {
     height: 19px;
     font-size: 14px;
     font-weight: 300;
-    color: #4386bf; }
+    color: #d93025; }
   .main-section div table tbody tr .left ul {
     padding-left: 0; }
     .main-section div table tbody tr .left ul li {
       display: inline;
       font-size: 14px;
       font-weight: 300;
-      color: #4386bf;
+      color: #d93025;
       padding-right: 12px; }
       .main-section div table tbody tr .left ul li div {
         display: inline;
@@ -117,7 +117,7 @@ body {
         height: 68px;
         border-style: solid;
         border-width: 5px;
-        border-color: #307bbe;
+        border-color: #d93025;
         border-radius: 50%; }
     .main-section div table tbody tr .middle ul .percentage-box {
       display: inline;
@@ -145,7 +145,7 @@ body {
   .main-section div table tbody tr .right div button {
     width: 184px;
     border-radius: 3px;
-    background-color: #0290ff;
+    background-color: #d93025;
     color: white;
     margin-top: 16px; }
 
@@ -181,7 +181,7 @@ body {
     width: 184px;
     height: 45px;
     border-radius: 3px;
-    background-color: #0290ff;
+    background-color: #d93025;
     color: white; }
 
 /*# sourceMappingURL=style.css.map */
