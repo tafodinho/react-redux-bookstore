@@ -57,4 +57,4 @@ Finally, run `npm run deploy` and wait for it till is throws a `Published messag
 
 ## Screenshot
 
-![screenshot](https://github.com/tafodinho/react-redux-bookstore/blob/master/public/Screenshot%20from%202019-11-08%2017-41-14.png)
+![screenshot](https://github.com/tafodinho/react-redux-bookstore/blob/develop/public/screenshot.png)
