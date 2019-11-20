@@ -35,7 +35,7 @@ class BookForm extends React.Component {
   }
 
   render() {
-    const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+    const categories = ['Action', 'Adventure', 'Comedy', 'Story', 'Kids', 'Learning', 'Sci-Fi'];
     const { title } = this.state;
     const options = categories.map((category) => (
       <option value={category} key={category}>{category}</option>

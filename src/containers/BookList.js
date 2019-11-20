@@ -10,7 +10,7 @@ import filterBooks from '../helper';
 
 const BookList = (props) => {
   const { books } = props;
-  const categories = ['ALL', 'Action', 'Biography', 'History', 'Agriculture', 'Kids', 'Poetry', 'Sci-Fi'];
+  const categories = ['ALL', 'Action', 'Adventure', 'Comedy', 'Story', 'Kids', 'Learning', 'Sci-Fi'];
 
   const handleRemoveBook = (book) => {
     const { submitRemoveBook } = props;

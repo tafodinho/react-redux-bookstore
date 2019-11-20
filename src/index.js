@@ -15,8 +15,8 @@ const initialState = {
   books: [
     {
       id: Math.random(),
-      title: 'Hello World',
-      category: 'Poetry',
+      title: 'Titans Reborn',
+      category: 'Adventure',
       perComplete: 75,
       chapter: 15,
       author: 'Ngam Cletus',
@@ -24,7 +24,7 @@ const initialState = {
     {
       id: Math.random(),
       title: 'Farmers Place',
-      category: 'Agriculture',
+      category: 'Comedy',
       perComplete: 14,
       chapter: 3,
       author: 'Morris Clackton',
@@ -32,7 +32,7 @@ const initialState = {
     {
       id: Math.random(),
       title: 'The first americas',
-      category: 'History',
+      category: 'Story',
       perComplete: 60,
       chapter: 8,
       author: 'Michael Zara',
