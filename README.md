@@ -1,6 +1,6 @@
-# Bookstore
+# Movie CMS
 
-Bookstore CMS is an app that contains books. Users can add or remove books from the list. Each book contain information such as: Title, Category that the books belongs to, Percentage of completion, Chapter that the user is reading now.
+Movie CMS is an app that contains Movies. Users can add and remove movies from the list. Each movie contains information such as: Title, Category that the books belongs to, Percentage of completion, Episode that the user is watching now.
 
 Online preview: https://josh-react-bookstore.herokuapp.com/
 
